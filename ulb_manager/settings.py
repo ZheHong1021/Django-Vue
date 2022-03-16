@@ -59,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # 'DIRS': [], 
-        'DIRS': ['frontend/dist'],
+        'DIRS': ['front/dist'],
 
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,7 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 # Add for vuejs 
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, "frontend/dist/static"), ]
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, "front/dist/static"), ]
 
 
 # Default primary key field type
