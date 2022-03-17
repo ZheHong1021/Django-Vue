@@ -24,6 +24,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path(r'backend/', include('backend.urls')),
     re_path(r'^$', TemplateView.as_view(template_name="index.html")), # 新增的
     re_path(r'api/add_book$', BookView.add_book),
     re_path(r'api/show_books$', BookView.show_books),

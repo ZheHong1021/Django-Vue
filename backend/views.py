@@ -1,12 +1,17 @@
 from django.shortcuts import render
 from django.views import View
 
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.views.decorators.http import require_http_methods
 from django.core import serializers
 import requests
 import json
 from .models import Book
+
+# Create your views here.
+def index(request):
+    return HttpResponse("hello")
+
 
 class BookView:
     # Create your views here.

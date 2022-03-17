@@ -59,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # 'DIRS': [], 
-        'DIRS': ['front/dist'],
+        # 'DIRS': ['front/dist'],
+        'DIRS': [os.path.join(BASE_DIR, 'front/dist')],
 
         'APP_DIRS': True,
         'OPTIONS': {
